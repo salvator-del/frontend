@@ -1,1 +1,1 @@
-# QR code component
+# Frontend Projects
