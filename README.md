@@ -1,1 +1,1 @@
-# frontend
+# QR code component
