@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of the day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quote-box">
+        <h2>Anime Quote of the day</h2>
+        <blockquote id="quote">Loading...</blockquote>
+        <span id="character">Loading...</span>
+        <div>
+            <button onclick="getAnimeQuote(api_url)">New Quote</button>
+            <button id="tweetBtn"><img src="no-x.png">Tweet</button>
+        </div>
+    </div>
+
+<script>
+    const quote = document.getElementById("quote");
+    const character = document.getElementById("character");
+    const api_url = "https://animechan.xyz/api/random";
+    const tweetBtn = document.getElementById("tweetBtn");
+    const twitterUrl = "https://twitter.com/home";
+    const twitterText = "Check out this anime quote: ";
+
+    async function getAnimeQuote(url) {
+        const response = await fetch(url);
+        var data = await response.json();
+        
+        quote.innerHTML = data.quote;
+        character.innerHTML = data.character;
+    }
+
+    tweetBtn.addEventListener("click", function() {
+        const quoteText = document.getElementById("quote").innerText;
+        const characterText = document.getElementById("character").innerText;
+        
+        const tweetContent = `${twitterText}${quoteText} - ${characterText}`;
+        const tweetUrl = `${twitterUrl}?text=${encodeURIComponent(tweetContent)}`;
+
+        window.open(tweetUrl, "_self");
+    });
+
+    getAnimeQuote(api_url);
+</script>
+</body>
+</html>
