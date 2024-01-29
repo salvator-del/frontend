@@ -18,8 +18,7 @@ This repository contains HTML and CSS code for a responsive QR code component de
 1. Clone the repository: `git clone https://github.com/salvator-del/frontend-mentor-qr-code.git`
 2. Open `index.html` in a web browser to view the QR code component.
 
-   
-![front1](https://github.com/salvator-del/frontend/assets/65698466/635e9ad7-4a1c-4084-83ea-e85ec606f701)
+![front1](https://github.com/salvator-del/frontend/assets/65698466/1b5a95f7-6f41-4dd5-ba12-b635d1452651)
 ![front2](https://github.com/salvator-del/frontend/assets/65698466/ff2c9ff8-6f41-41d2-ace2-627d7e89e43e)
 
 ## Credits
