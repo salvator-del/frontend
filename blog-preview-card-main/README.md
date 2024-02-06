@@ -17,9 +17,8 @@ This is a simple blog preview card created with HTML and CSS. It showcases a blo
 To use this blog preview card, simply copy the HTML and CSS code provided in the respective files (`index.html` and `styles.css`) and integrate them into your project. Customize the content, styles, and layout as needed to fit your requirements.
 
 ## Preview
-
-![blog2](https://github.com/salvator-del/frontend/assets/65698466/34632181-180b-44cd-b846-c4db5cd41683)
 ![blog1](https://github.com/salvator-del/frontend/assets/65698466/aeab6696-5696-4e34-8f8f-de992f588b2f)
+![blog2](https://github.com/salvator-del/frontend/assets/65698466/34632181-180b-44cd-b846-c4db5cd41683)
 
 live demo⬇️
 salvator-blog-card.netlify.app
