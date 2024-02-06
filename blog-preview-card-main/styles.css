@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&family=Inter:wght@400;600;700&display=swap');
+body {
+    display: flex;
+    align-items: center;
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree', sans-serif;
+    justify-content: center;
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 10px 10px hsl(0, 0%, 7%);
+    border-radius: 15px;
+    padding: 4%;
+    top: 25%;
+    text-align: center;
+    width: 375px;
+    height: 500px;
+}
+
+.head {
+    border-radius: 15px;
+    width: 375px;
+}
+.avatar {
+    display: flex;
+    justify-items: auto;
+    height: 30px;
+    padding: 3px;
+}
+.avatar h3 {
+    text-align: center;
+    margin-top: 2px;
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: 800;
+}
+.label {
+    width: 30%;
+}
+
+.label h3 {
+    background-color: hsl(47, 88%, 63%);
+    padding: 5px;
+    font-weight: 800;
+}
+
+.details h2 {
+    text-align: left;
+    margin-top: 2px;
+    color: hsl(47, 88%, 63%);
+}
+.details p {
+    text-align: left;
+    font-size: 16px;
+    color: hsl(0, 0%, 50%);
+}
+
+@media screen and (max-width:678px) {
+    .card {
+        width: 300px;
+        margin-right: 45px;
+        height: 450px;
+    }
+    .head {
+        width: inherit;
+    }
+}
